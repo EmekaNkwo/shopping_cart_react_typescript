@@ -40,7 +40,7 @@ const CartProduct = ({ product }: IProps) => {
       <div className="cartDetail">
         <p className="cartDetailTitle">{title}</p>
         <p className="cartDetailDesc">
-          {`${availableSizes[0]} | ${style}`} <br />
+          {`Size: ${availableSizes[0]} | Color: ${style}`} <br />
           Quantity: {quantity}
         </p>
       </div>
