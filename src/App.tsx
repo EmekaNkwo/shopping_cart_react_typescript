@@ -5,9 +5,11 @@ import Loader from "./components/Loader";
 import Products from "./components/Products";
 import { useProducts } from "./contexts/productContext";
 import "./app.scss";
+import { useCart } from "./contexts/cartContext";
 
 function App() {
   const { isFetching, products, fetchProducts } = useProducts();
+  const { closeCart } = useCart();
 
   useEffect(() => {
     fetchProducts();
@@ -15,7 +17,7 @@ function App() {
   return (
     <div className="appContainer">
       {isFetching && <Loader />}
-      <main className="twoColumnGrid">
+      <div className="twoColumnGrid" onClick={closeCart}>
         <div className="side">
           <Filter />
         </div>
@@ -25,7 +27,7 @@ function App() {
           </main>
           <Products products={products} />
         </div>
-      </main>
+      </div>
       <Cart />
     </div>
   );
