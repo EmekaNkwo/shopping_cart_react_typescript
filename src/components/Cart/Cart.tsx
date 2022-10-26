@@ -1,6 +1,5 @@
 import formatPrice from "../../utils/formatPrice";
 import CartProducts from "./CartProducts";
-import { FaShoppingCart } from "react-icons/fa";
 
 import { useCart } from "../../contexts/cartContext";
 
