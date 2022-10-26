@@ -49,9 +49,9 @@ const Cart = () => {
         <div className="cartContent">
           <div className="cartContentHeader">
             <div className="cartIcon">
-              <div className="cartQuantity">{total.productQuantity}</div>
+              <div className="cartQuantity">{total.productQuantity} </div>
             </div>
-            <span className="headerTitle">Cart</span>
+            <span className="headerTitle">in Cart</span>
           </div>
 
           <CartProducts products={products} />
