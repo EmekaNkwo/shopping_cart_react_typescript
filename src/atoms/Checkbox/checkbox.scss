@@ -22,7 +22,7 @@
       cursor: pointer;
 
       &:checked ~ .checkmark {
-        background-color: black;
+        background-color: #001f2f;
         color: #ececec;
       }
 
@@ -48,7 +48,7 @@
       border: 1px solid transparent;
 
       &:hover {
-        border: 1px solid black;
+        border: 1px solid #f2ab06ef;
       }
     }
     &:checked {
