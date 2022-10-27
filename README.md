@@ -1,6 +1,6 @@
 # An Ecommerce Cart Application
 
-## Overview
+## Overview - [Live Demo](https://nkwo-shoppingcart.netlify.app/)
 
 This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and SCSS can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
 
