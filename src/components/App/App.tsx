@@ -1,11 +1,12 @@
 import { useEffect } from "react";
-import Cart from "./components/Cart";
-import Filter from "./components/Filters/Filter";
-import Loader from "./components/Loader";
-import Products from "./components/Products";
-import { useProducts } from "./contexts/productContext";
+
+import { useProducts } from "../../contexts/productContext";
 import "./app.scss";
-import { useCart } from "./contexts/cartContext";
+import { useCart } from "../../contexts/cartContext";
+import Loader from "../Loader";
+import Filter from "../Filters/Filter";
+import Products from "../Products";
+import Cart from "../Cart";
 
 function App() {
   const { isFetching, products, fetchProducts } = useProducts();
